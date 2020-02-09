@@ -5,7 +5,8 @@ browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
 server->browser: text/html
 
 note over browser:
-Send data asyncronously through the form, without refreshing the page.
+Send data through the form, with the new_note method
+refreshing the page
 end note
 
 note over server:
