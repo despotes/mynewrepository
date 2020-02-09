@@ -7,10 +7,12 @@ server->browser: text/html
 note over browser:
 Send data through the form, with the new_note method
 refreshing the page
+Data is sent as the body of POST-request
 end note
 
 note over server:
-Server modifies the json object adding the new note.
+Server access the data in the req.body field of the request object req.
+and create a new note object
 end note
 
 browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes

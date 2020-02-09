@@ -1,0 +1,15 @@
+title Authentication Sequence spa New Note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server->browser: 201 Status Code
+
+note over browser:
+Send data as JSON object asyncronously through the form, with the new_note_spa method
+preventing the form from refreshing the page.
+end note
+
+note over server:
+Use the data JSON sent by the browser and modifies the notes list
+Server status code 201, and don't ask for redirect,
+and sends no further HTTP-requests.
+end note
